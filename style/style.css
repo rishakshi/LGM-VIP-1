@@ -1,23 +1,31 @@
-*{
-    top: 0px;
-    left: 0px;
+* {
+    box-sizing: border-box;
+    /* top: 0px;
+    left: 0px; */
     margin: 0px;
     padding: 0px;
     font-family: 'Zen Antique', serif;
 }
 
-html{
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
+
 /* HEADER  */
-header{
+
+header {
     display: block;
     position: relative;
     color: white;
 }
 
-header::before{
+header::before {
     content: "";
     position: absolute;
     background: url(../images/background1.jpg) no-repeat center center/cover;
@@ -26,13 +34,13 @@ header::before{
     z-index: -1;
 }
 
-#navbar{
+#navbar {
     display: flex;
     flex-direction: row;
     padding: 30px;
 }
 
-.logo{
+.logo {
     font-size: 40px;
     text-decoration: none;
     color: white;
@@ -40,14 +48,14 @@ header::before{
     margin-left: 440px;
 }
 
-.nav-bar ul{
+.nav-bar ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     margin-left: 500px;
 }
 
-.nav-bar ul li a{
+.nav-bar ul li a {
     text-decoration: none;
     color: white;
     padding: 20px;
@@ -56,26 +64,27 @@ header::before{
     align-items: center;
 }
 
-.nav-bar li a:hover, .nav-bar li a.active{
+.nav-bar li a:hover,
+.nav-bar li a.active {
     color: rgb(255, 217, 0);
 }
 
-#home{
+#home {
     width: 570px;
     height: 600px;
     margin-left: 450px;
 }
 
-#home p{
+#home p {
     font-size: 20px;
     padding: 10px;
 }
 
-#home h1{
+#home h1 {
     margin-top: 32px;
 }
 
-.button{
+.button {
     font-size: 25px;
     background-color: purple;
     color: white;
@@ -86,40 +95,42 @@ header::before{
     cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
     background-color: gold;
     color: black;
 }
 
+
 /* WELCOME  */
-#welcome{
+
+#welcome {
     display: block;
     position: relative;
     width: 100rem;
-    margin-left: 360px;
+    /* margin-left: 360px; */
     margin-top: 80px;
 }
 
-.welcome-section{
+.welcome-section {
     display: flex;
     flex-direction: row;
     margin-left: 360px;
 }
 
-.welcome-section p{
+.welcome-section p {
     font-size: 30px;
     width: 560px;
     padding: 32px;
     margin: 25px 100px 10px 0px;
 }
 
-.welcome-section img{
+.welcome-section img {
     width: 200px;
     height: 200px;
     padding: 15px;
 }
 
-.welcome-section2{
+.welcome-section2 {
     display: flex;
     flex-direction: row;
     margin-left: 360px;
@@ -127,120 +138,124 @@ header::before{
     margin-bottom: 10px;
 }
 
-.wel-box{
+.wel-box {
     width: 250px;
     margin: 10px 20px 10px 20px;
     padding: 20px;
 }
 
-.wel-box h3{
+.wel-box h3 {
     font-size: 25px;
     margin: 20px;
 }
 
-.wel-box p{
+.wel-box p {
     font-size: 20px;
     margin: 20px;
 }
 
-.wel-box img{
+.wel-box img {
     display: block;
     width: 80px;
     margin: auto;
 }
 
-.wel-box button{
+.wel-box button {
     margin-left: 45px;
 }
 
+
 /* PROJECTS  */
-#projects{
+
+#projects {
     display: block;
     position: relative;
     margin-top: 60px;
     margin-bottom: 40px;
 }
 
-.project{
+.project {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 40px;
 }
 
-.project-box{
+.project-box {
     width: 100%;
 }
 
-.project button{
+.project button {
     background-color: white;
     color: black;
     margin-left: 0px;
 }
 
-.project-box:nth-child(2n){
+.project-box:nth-child(2n) {
     background-color: #dadada;
 }
 
-.project-box:nth-child(2n-1){
+.project-box:nth-child(2n-1) {
     background-color: #bbb9b9;
 }
 
-.project-box:hover{
+.project-box:hover {
     transition: all 0.5s;
     background-color: gold;
 }
 
-.project-box:hover button{
+.project-box:hover button {
     transition: all 0.5s;
     background-color: purple;
     color: white;
 }
 
-.project-box img{
+.project-box img {
     width: 100%;
     height: 600px;
 }
 
-.project-text h3{
+.project-text h3 {
     font-size: 25px;
 }
 
-.project-text p{
+.project-text p {
     font-size: 18px
 }
 
-.project-text{
+.project-text {
     padding: 60px;
 }
 
+
 /* PRICING  */
-#pricing-table{
+
+#pricing-table {
     display: block;
     position: relative;
     padding-top: 60px;
     margin-bottom: 80px;
 }
 
-.pricing{
+.pricing {
     display: flex;
     flex-direction: row;
-    width: 100rem;
-    margin: 40px 0px 40px 470px;
+    width: 100vh;
+    margin: 25px auto;
 }
 
-.pricing-box{
+.pricing-box {
     width: 400px;
     margin: 10px;
     padding: 12px;
 }
 
-.pricing-box h3{
+.pricing-box h3 {
     font-size: 28px;
     font-weight: 900;
     padding: 5px;
 }
 
-.par{
+.par {
     font-size: 16px;
     color: #888888;
     margin-top: 10px;
@@ -248,13 +263,13 @@ header::before{
     font-weight: 500;
 }
 
-.pricing-box p{
+.pricing-box p {
     padding: 5px;
     font-weight: 600;
     font-size: 18px;
 }
 
-.pricing-box button{
+.pricing-box button {
     font-size: medium;
     padding: 10px 35px 10px 35px;
     background-color: gold;
@@ -262,59 +277,66 @@ header::before{
     font-weight: bold;
 }
 
-.pricing-box button:hover{
+.pricing-box button:hover {
     background-color: purple;
     color: white;
 }
 
-.border{
+.border {
     border-right: 2px solid gray;
 }
 
+
 /* VIDEO PROJECTS  */
-#video-projects{
+
+#video-projects {
     display: block;
     position: relative;
     background-color: purple;
     color: white;
     height: 900px;
+    overflow: hidden;
 }
 
-#video-projects h1{
+#video-projects h1 {
     padding-top: 80px;
 }
 
-.videos{
+.videos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 40px;
 }
 
-video{
+video {
     width: 730px;
     height: 460px;
     margin: 10px;
 }
-.video span{
+
+.video span {
     margin-left: 20px;
 }
-.dollar{
+
+.dollar {
     margin-left: 600px !important;
 }
 
+
 /* TEAM  */
-#team{
+
+#team {
     display: block;
     position: relative;
     margin-bottom: 130px;
 }
 
-#team h1{
+#team h1 {
     padding-top: 60px;
 }
 
-.team{
+.team {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -323,53 +345,55 @@ video{
     margin: 40px 500px 80px 700px;
 }
 
-.team-member{
+.team-member {
     margin: 10px;
     padding: 10px;
 }
 
-.team-member img{
+.team-member img {
     width: 200px;
     height: 200px;
     border-radius: 100%;
     margin: 10px;
 }
 
-.team-member p{
+.team-member p {
     margin-right: 90px;
 }
 
+
 /* LIFE IN ZIPPY  */
-#life{
+
+#life {
     display: block;
     position: relative;
     background-color: #e2e2e2;
     height: 1600px;
 }
 
-#life h1{
+#life h1 {
     padding: 80px;
 }
 
-.zippy-life-row{
+.zippy-life-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.zippy-life-large{
+.zippy-life-large {
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
-.zippy-life-large img{
+.zippy-life-large img {
     width: 1670px;
     height: 1000px;
     margin: 20px;
 }
 
-.pic img{
+.pic img {
     display: block;
     width: 200px;
     height: 130px;
@@ -377,28 +401,30 @@ video{
     cursor: pointer;
 }
 
-.pic img:hover{
+.pic img:hover {
     opacity: 0.5;
 }
 
-.zippy-life-row::after{
+.zippy-life-row::after {
     content: "";
     display: table;
 }
 
+
 /* NEWSLETTER  */
-#sign-up{
+
+#sign-up {
     display: block;
     position: relative;
     height: 500px;
     color: white;
 }
 
-#sign-up h1{
+#sign-up h1 {
     padding-top: 100px;
 }
 
-#sign-up::before{
+#sign-up::before {
     content: "";
     position: absolute;
     background: url(../images/newsletter.jpg) no-repeat center center/cover;
@@ -407,7 +433,7 @@ video{
     z-index: -1;
 }
 
-.enter{
+.enter {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -415,7 +441,7 @@ video{
     margin-top: 40px;
 }
 
-.enter input{
+.enter input {
     height: 26px;
     width: 420px;
     font-size: 30px;
@@ -423,21 +449,23 @@ video{
     border: 0px;
 }
 
-.enter button{
+.enter button {
     margin: 0px;
 }
 
+
 /* BLOGS  */
-#blog{
+
+#blog {
     display: block;
     position: relative;
 }
 
-#blog h1{
+#blog h1 {
     padding-top: 50px;
 }
 
-.blogs{
+.blogs {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -445,7 +473,7 @@ video{
     margin-top: 50px;
 }
 
-.blog-box{
+.blog-box {
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -454,51 +482,54 @@ video{
     margin: 20px;
 }
 
-.blog-box img{
+.blog-box img {
     width: 320px;
     height: 180px;
 }
 
-.blog-text{
+.blog-text {
     padding: 70px;
 }
 
-.blog-text h3{
+.blog-text h3 {
     font-weight: bold;
 }
 
-.blog-text p{
+.blog-text p {
     font-size: 18px;
     padding: 12px;
 }
 
-.blog-text button{
+.blog-text button {
     background-color: #dbdbdb;
     color: black;
 }
 
-.date{
+.date {
     color: #888888;
     padding-top: 10px;
 }
 
+
 /* CONTACT  */
-#contact{
+
+#contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.map img{
+.map img {
     width: 100%;
 }
 
-.contact-form{
+.contact-form {
     background-color: rgb(236, 210, 60);
     padding: 30px;
-
 }
 
-.contact-form input[type=text], .contact-form input[type=email], .contact-form textarea {
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea {
     width: 50%;
     padding: 15px;
     border: 0px;
@@ -506,30 +537,33 @@ video{
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
+}
 
-.form-content{
+.form-content {
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
 
-.form-content label{
+.form-content label {
     font-size: 18px;
     font-weight: bold;
 }
 
-.contact-form form button{
+.contact-form form button {
     margin: 20px;
     width: 50%;
 }
-.contact-form form button:hover{
+
+.contact-form form button:hover {
     background-color: rgb(160, 0, 160);
     color: white;
 }
 
+
 /* FOOTER  */
-footer{
+
+footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -537,29 +571,31 @@ footer{
     height: 500px;
 }
 
-.footer-box{
+.footer-box {
     text-align: center;
     width: 300px;
     padding: 25px;
 }
 
-.footer-box h3{
+.footer-box h3 {
     margin: 10px;
 }
 
-.footer-box img{
+.footer-box img {
     width: 50px;
     height: 50px;
     margin: 3px;
     cursor: pointer;
 }
 
+
 /* UTILITY CLASSES */
-.center{
+
+.center {
     text-align: center;
 }
 
-.heading{
+.heading {
     font-size: 50px;
     padding: 12px;
 }
